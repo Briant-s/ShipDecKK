@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+
+:root{
+    --accent-1: #091235;
+    --accent-2: #FCA311;
+    --button-accent-2: #FEC872;
+    --text-accent-2: #D8BD8A;
+}
+
+html, body{
+    width: 100vw;
+    height: 100dvh;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+h1{
+    margin: 0%;
+    font-size: clamp(3rem, calc(7vw + 0.7rem), 6rem);
+}
+
+h2{
+    margin: 0%;
+    font-size: clamp(2.5rem, calc(5vw + 0.7rem), 3.5rem);
+}
+
+
+h5{
+    text-decoration: none;
+    margin: 0%;
+    font-size: clamp(1.2rem, calc(1.5vw + 0.5rem), 3rem);
+}
+
+h6{
+    margin: 0%;
+    font-size: clamp(1rem), calc(1vw + 0.5rem), 2rem;
+}
