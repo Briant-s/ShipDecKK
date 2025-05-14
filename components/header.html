@@ -13,10 +13,10 @@
             <h1>ShipDecKK</h1>
         </div>
         <div class="menu-items">
-            <a href="">Gallery</a>
-            <a href="">Services</a>
-            <a href="">About Us</a>
-            <a href="" id="sub-button">Subscribe</a>
+            <a href="" class="header-link">Gallery</a>
+            <a href="" class="header-link">Services</a>
+            <a href="" class="header-link">About Us</a>
+            <a href="" class="sub-button">Subscribe</a>
         </div>
         <button onclick="header_sidebar_open()" id="header-button">
             <span class="material-symbols-outlined">menu</span>
@@ -24,10 +24,22 @@
     </div>
     <!-- Hidden Sidebar -->
         <div class="header-sidebar"  id="header-menu">
-            <button onclick="header_sidebar_close()">Close x</button>
-            <a href="">Gallery</a>
-            <a href="">Services</a>
-            <a href="">About Us</a>
+            <button onclick="header_sidebar_close()" id="close-button">
+                <p class="sidebar-text">Close</p>
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="sidebar-actions">
+                <a href="">
+                    <p class="sidebar-text">Gallery</p>
+                </a>
+                <a href="">
+                    <p class="sidebar-text">Services</p>
+                </a>
+                <a href="">
+                    <p class="sidebar-text">About Us</p>
+                </a>
+                <a href="" class="sub-button">Subscribe</a>
+            </div>
     </div>
     <script>
         function header_sidebar_open(){

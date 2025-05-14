@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+
+:root{
+    --accent-1: #091235;
+    --accent-2: #FCA311;
+    --button-accent-2: #FEC872;
+    --text-accent-2: #D8BD8A;
+}
+
+html, body{
+    width: 100vw;
+    height: 100dvh;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+
+.hover:hover{
+    opacity: 50%;
+}
 
 .main-header{
     display: inline-flex;
@@ -9,19 +30,21 @@
     padding: 0% clamp(1.5rem, 3vw, 3rem);
 }
 
-.main-header a{
-    text-decoration: none;
-    color: var(--text-accent-2);
-}
-
-.main-header a:hover{
-    color: #E6D4B3;
-}
-
-
-
 .main-header #header-button{
     display: none;
+}
+
+#header-menu{
+    display: none;
+}
+
+.header-link{
+    text-decoration: none;
+    color: var(--accent-2);
+}
+
+.header-link:hover{
+    color: var(--text-accent-2);   
 }
 
 
@@ -29,9 +52,35 @@
     padding: clamp(0.5rem, 1vw, 1.5rem) clamp(0.5rem, 1vw, 1.5rem);
 }
 
-.menu-items #sub-button{
+.sub-button{
     background-color: orange;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: clamp(1em, 2vh, 2em) clamp(1em, 2vw, 2em);
 }
+
+.sub-button:hover{
+    background-color: var(--button-accent-2);
+}
+
+.sub-button:active{
+    background-color: var(--button-accent-2);
+}
+
+#header-button{
+    border: none;
+    background-color: var(--accent-2);
+    align-items: center;
+    padding: clamp(0.3em, 0.9vw, 1em) clamp(0.5em, 1vw, 1.2em);
+}
+
+#header-button:active{
+    color: white;
+    opacity: 70%;
+}
+
+
 
 .header-sidebar{
     display: flex;
@@ -41,13 +90,61 @@
     right: 0;
     background-color: var(--accent-1);
     padding: 1em 1em;
-    width: 5em;
+    width: clamp(6em, 7vw, 8em);
     height: 100%;
+    gap: 32px;
 }
 
-#header-menu{
-    display: none;
+.sidebar-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
+
+.sidebar-actions p{
+    color: var(--accent-2);
+}
+
+.sidebar-actions:active{
+    color: var(--text-accent-2);
+}
+
+.header-sidebar a{
+    margin: 0%;
+    text-decoration: none;
+}
+
+.header-sidebar p{
+    margin: 0%;
+}
+
+.sidebar-text{
+    font-size: clamp(1.5em, 3vw, 4em);
+    color: white;
+}
+
+#close-button{
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    background: none;
+    color: var(--accent-2);
+}
+
+#close-button p{
+    color: var(--accent-2);
+}
+
+#close-button span{
+    color: var(--accent-2);
+    font-size: clamp(2em, 3vw, 3em);
+}
+
+#close-button:active{
+    color: var(--text-accent-2);
+}
+
+
 
 @media screen and (max-width: 768px){
     .menu-items{

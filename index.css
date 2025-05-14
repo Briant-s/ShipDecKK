@@ -3,6 +3,8 @@
 
 :root{
     --accent-1: #091235;
+    --accent-2: #FCA311;
+    --button-accent-2: #FEC872;
     --text-accent-2: #D8BD8A;
 }
 
@@ -12,54 +14,4 @@ html, body{
     margin: 0%;
     padding: 0%;
     color: white;
-}
-
-.hover:hover{
-    opacity: 50%;
-}
-
-.main-header{
-    display: inline-flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    background-color: var(--accent-1);
-    padding: 0% clamp(1.5rem, 3vw, 3rem);
-}
-
-.main-header #header-button{
-    display: none;
-}
-
-
-.menu-items a{
-    padding: clamp(0.5rem, 1vw, 1.5rem) clamp(0.5rem, 1vw, 1.5rem);
-}
-
-.menu-items #sub-button{
-    background-color: orange;
-}
-
-.header-sidebar{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: var(--accent-1);
-    padding: 1em 1em;
-    width: 5em;
-    height: 100%;
-}
-
-
-
-@media screen and (max-width: 768px){
-    .menu-items{
-        display: none;
-    }
-    .main-header #header-button{
-        display: block;
-    }
 }
