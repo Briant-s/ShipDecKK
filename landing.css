@@ -101,7 +101,6 @@
     background-color: var(--accent-2);
     color: white;
     width: fit-content;
-
 }
 .product-card{
     display: flex;
@@ -133,6 +132,47 @@
 
 
 
+.subscribe-part{
+    display: inline-flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--accent-1);
+}
+
+
+.subscribe-part img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    flex: 1;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.subscribe-part .subscribe-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.descbutton{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#subscription-cta{
+    text-decoration: none;
+    padding: clamp(1rem, 2vh, 3rem) clamp(1rem, 2vw, 3rem);
+    text-align: center;
+    background-color: var(--accent-2);
+    color: white;
+    width: fit-content;
+}
 
 
 @media screen and (max-width: 768px){
@@ -150,5 +190,11 @@
         flex-direction: column;
         align-items: center;
     }
-    
+
+    .subscribe-part{
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
