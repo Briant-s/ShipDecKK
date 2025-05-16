@@ -23,7 +23,6 @@ class Header extends HTMLElement {
         </div>
         <div class="header-sidebar" id="header-menu" style="display: none;">
             <button id="close-button">
-                <p class="sidebar-text">Close</p>
                 <span class="material-symbols-outlined">close</span>
             </button>
             <div class="sidebar-actions">
@@ -34,8 +33,6 @@ class Header extends HTMLElement {
             </div>
         </div>
         `;
-
-        // ✅ These lines run AFTER the HTML is added
         const openBtn = this.shadowRoot.getElementById("header-button");
         const closeBtn = this.shadowRoot.getElementById("close-button");
         const sidebar = this.shadowRoot.getElementById("header-menu");

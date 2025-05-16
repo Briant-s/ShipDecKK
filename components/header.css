@@ -93,12 +93,13 @@ html, body{
     width: clamp(6em, 7vw, 8em);
     height: 100%;
     gap: 32px;
+    z-index: 10;
 }
 
 .sidebar-actions{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 2em;
 }
 
 .sidebar-actions p{
