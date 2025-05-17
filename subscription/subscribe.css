@@ -1,18 +1,23 @@
 
 
+
+
 img{
     width: 100%;
-    aspect-ratio: 1/1;
     object-fit: cover;
-    z-index: 1;
+    height: 100%;
 }
 
+
+h4{
+    font-size: clamp(1.5rem, calc(1.7vw + 0.5rem), 2.5rem);
+}
 
 .container-content{
     width: 100%;
     position: relative;
     align-items: center;
-    height: auto;
+    height: 100%;
 }
 
 
@@ -27,7 +32,7 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 3em 3em;
+    padding: clamp(2em, 3vh, 5rem) clamp(1.5rem, 2vw, 5rem);
     height: fit-content;
 }
 
@@ -68,6 +73,10 @@ img{
     width: 100%;
 }
 
+.subscribe-form span{
+    font-weight: 500;
+}
+
 .form-list{
     display: flex;
     flex-direction: column;
@@ -85,8 +94,18 @@ img{
     font-size: clamp(0.5rem, calc(0.65vw + 0.65rem), 1.4rem); 
 }
 
+#sub-button{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: clamp(0.6rem, 1.7vh, 3rem) clamp(1rem, 2vw, 3rem);
+    text-align: center;
+    background-color: var(--accent-2);
+    color: white;
+    width: 100%;
+}
+
 .form-list input{
-    height: 1.2em;
+    height: clamp(0.5em, 2vh, 2em);
     padding: 0.6em 0.7em;
     outline: 1 solid var(--accent-1)
 }
@@ -108,7 +127,7 @@ img{
 .benefits-part{
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: clamp(0.5em, 1vw, 1.5em);
 }
 
 .benefits{
@@ -122,7 +141,20 @@ img{
     flex-direction: column;
 }
 
+.tos span{
+    font-size: clamp(0.5rem, calc(0.65vw + 0.65rem), 1.4rem);
+}
+
 @media screen and (max-width: 768px) {
 
+    .container-content{
+        height: clamp(50rem, 150dvh, 300rem);
+    }
+
+
+    .subscribe-part{
+        display: flex;
+        flex-direction: column;
+    }
 
 }    
