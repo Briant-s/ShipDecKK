@@ -1,0 +1,85 @@
+body{
+    color: var(--accent-1);
+}
+
+.aboutus-hero{
+    position: relative;
+}
+
+
+#landing-image{
+    width: 100%;
+    height: auto;
+    max-height: 75vh;
+    object-fit: cover;
+    z-index: 0;
+    position: relative;
+}
+.aboutus-hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    
+.about-ships{
+    display: inline-flex;
+    align-items: center;
+}
+
+.ships-number-container{
+    flex: 1;
+}
+
+
+.ships-number{
+    display: inline-flex;
+}
+
+.ships-text-container{
+    flex: 1;
+}
+
+.feature-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.ships-features{
+    display: inline-flex;
+}
+
+
+.company-history{
+    display: inline-flex;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background-image: url(/assets/pexels-ollivves-1295036.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 3em 3em;
+}
+
+.history-grid{
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.company-mission{
+    display: inline-flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+#mission-img{
+    display: flex;
+    flex: 1;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 450px;
+    height: 450px;
+}
