@@ -9,13 +9,13 @@ class Header extends HTMLElement {
         <link rel="stylesheet" href="/components/header.css"/>
         <div class="main-header">
             <div class="logo">
-                <h1>ShipDecKK</h1>
+                <a href="/index.html"><h1>ShipDecKK</h1></a>
             </div>
             <div class="menu-items">
                 <a href="" class="header-link">Gallery</a>
                 <a href="" class="header-link">Services</a>
-                <a href="" class="header-link">About Us</a>
-                <a href="" class="sub-button">Subscribe</a>
+                <a href="/about-us/about-us.html" class="header-link">About Us</a>
+                <a href="/subscription/subscribe.html" class="sub-button">Subscribe</a>
             </div>
             <button id="header-button">
                 <span class="material-symbols-outlined">menu</span>
@@ -28,8 +28,8 @@ class Header extends HTMLElement {
             <div class="sidebar-actions">
                 <a href=""><p class="sidebar-text">Gallery</p></a>
                 <a href=""><p class="sidebar-text">Services</p></a>
-                <a href=""><p class="sidebar-text">About Us</p></a>
-                <a href="" class="sub-button">Subscribe</a>
+                <a href="/about-us/about-us.html"><p class="sidebar-text">About Us</p></a>
+                <a href="/subscription/subscribe.html" class="sub-button">Subscribe</a>
             </div>
         </div>
         `;

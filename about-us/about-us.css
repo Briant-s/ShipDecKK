@@ -21,32 +21,85 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.aboutus-hero-text h2{
+    color: var(--accent-2);
+}
+
+.aboutus-hero-text h4{
+    color: white;
+}
     
 .about-ships{
     display: inline-flex;
     align-items: center;
+    text-align: center;
+    margin: clamp(2em, 10vw, 6em);
+    box-sizing: border-box;
+}
+
+.about-ships h5{
+    font-weight: lighter;
+}
+
+
+#ship-title{
+    color: var(--accent-2);
 }
 
 .ships-number-container{
-    flex: 1;
+    display: inline-flex;
+    width: 50%;
+    justify-content: space-evenly;
 }
 
 
 .ships-number{
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(0.5em, 2vh, 2em) clamp(0.5em, 2vw, 2em);
+
 }
 
 .ships-text-container{
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.feature{
+    display: flex;
+    justify-content: center;
 }
 
 .feature-container{
     display: flex;
     flex-direction: column;
+    gap: 0.5em;
 }
 
 .ships-features{
     display: inline-flex;
+    text-align: left;   
+}
+
+.ships-features span{
+    color: var(--accent-2);
+}
+
+#view-ships-cta{
+    text-decoration: none;
+    padding: clamp(1rem, 2vh, 3rem) clamp(1rem, 2vw, 3rem);
+    text-align: center;
+    background-color: var(--accent-2);
+    color: white;
+    width: fit-content;
+}
+
+#view-ships-cta:hover{
+    background-color: var(--accent-1);
+    color: var(--button-accent-2);
 }
 
 
@@ -54,17 +107,44 @@ body{
     display: inline-flex;
     width: 100%;
     height: fit-content;
+    align-items: center;
     text-align: center;
     background-image: url(/assets/pexels-ollivves-1295036.jpg);
     background-size: cover;
     box-sizing: border-box;
-    padding: 3em 3em;
+    padding: clamp(3em, 10vh, 4em) clamp(2em, 7vw, 4em);
+    gap: 3em;
+}
+
+.history-title{
+    flex: 1;
+    text-align: left;
+    color: var(--accent-2);
 }
 
 .history-grid{
     flex: 1;
     display: grid;
     grid-template-columns: auto auto;
+    text-align: left;
+    gap: 1.5em;
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.history h3{
+    color: var(--accent-2);
+}
+
+
+.history h5{
+    color: white;
+    text-align: left;
+    font-weight: lighter;
 }
 
 
@@ -73,6 +153,12 @@ body{
     width: 100%;
     box-sizing: border-box;
     align-items: center;
+    padding: clamp(2em, 10vh, 7em) clamp(2em, 10vw, 7em);
+}
+
+
+.company-img{
+    flex: 1;
 }
 
 #mission-img{
@@ -80,6 +166,129 @@ body{
     flex: 1;
     aspect-ratio: 1/1;
     object-fit: cover;
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    height: auto;
+}
+
+.mission-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.mission-text h3{
+    color: var(--accent-2);
+}
+
+.mission-text h5{
+    font-weight: lighter;
+}
+
+
+.company-values{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: clamp(2em, 5vh, 5em) clamp(2em, 5vw, 5em);
+    gap: 3em;
+    background-color: var(--accent-1);
+    color: white;
+}
+
+.company-values span{
+    color: var(--accent-2);
+}
+
+
+.company-values h3{
+    color: var(--accent-2);
+}
+
+.company-values h6{
+    font-weight: lighter;
+}
+
+
+.values-container{
+    display: inline-flex;
+    padding: 1em 1em;
+    align-items: center;
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    width: 100%;
+}
+
+.values span{
+    font-size: 2rem;
+}
+
+.company-achievements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(2em, 10vh, 5em) clamp(2em, 5vw, 5em);
+}
+
+.achievements-container{
+    display: inline-flex;
+    padding: 2em 2em;
+    gap: 1em;
+    justify-content: space-between;
+    
+}
+
+.achievements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--accent-1);
+    aspect-ratio: 1/1;
+    color: white;
+    width: fit-content;
+    max-width: 300px;
+    height: fit-content;
+    max-height: 300px;
+    padding: 1em 1em;
+    justify-content: space-between;
+
+}
+
+.achievements span{
+    font-size: 3em;
+    color: var(--accent-2);
+}
+
+
+
+@media screen and (max-width: 768px){
+    .company-history{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .values-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .company-mission{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .achievements-container{
+        display: flex;
+        flex-direction: column;
+    }
 }
