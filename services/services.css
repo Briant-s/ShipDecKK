@@ -1,0 +1,221 @@
+body{
+    color: black;
+}
+
+
+.hero-services{
+    background-image: url(/assets/pexels-pixabay-273886.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+    object-fit: contain;
+    padding: clamp(3em, 10vh, 4em) clamp(1.5em, 6vw, 9em);
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.text-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 75%;
+    background-color: var(--accent-1);
+    padding: 2em 2em;
+    left: 2.5%;
+}
+
+.text-container h3{
+    color: var(--accent-2);
+}
+
+.text-container h5{
+    color: white;
+}
+
+.services-ships{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 4em;
+    align-items: center;
+    padding: clamp(3em, 10vh, 8em) clamp(1.5em, 10vw, 8em);
+}
+
+.services-text{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    gap: 2em;
+}
+
+.services-text h3{
+    color: var(--accent-2);
+}
+
+.ships-container{
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    color: black;
+    width: 100%;
+}
+
+.ships{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    gap: 1em;
+}
+
+.ship-icon{
+    font-size: clamp(2rem, calc(3.5vw + 0.7rem), 4rem);
+    color: var(--accent-2);
+}
+
+.services-maintenance{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: clamp(3em, 8vh, 4em) clamp(2em, 6vw, 4em);
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+}
+
+
+#m-title{
+    color: var(--accent-2);
+}
+
+#m-desc{
+    font-weight: lighter;
+}
+
+.maintenance-card-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 5em;
+    overflow: hidden;
+
+}
+
+.maintenance-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    background-color: var(--accent-1);
+    text-align: center;
+    width: clamp(10em, 20vw, 20em);
+    height: clamp(10em, 35vh, 20em);
+    padding: 2em 2em;
+    color: white;
+    border: 2px solid transparent;
+    transition: box-shadow 0.3 ease, border-color 0.3 ease;
+}
+
+.maintenance-card:hover{
+    border-color: var(--accent-2);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.maintenance-card h5{
+    color: var(--accent-2);
+}
+
+.maintenance-card h6{
+    font-weight: lighter;
+}
+
+
+.m-icon{
+    font-size: clamp(2rem, calc(3.5vw + 0.7rem), 4.5rem);
+    color: white;
+}
+
+.services-insurance{
+    display: inline-flex;
+    width: 100%;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: var(--accent-1);
+}
+
+.insurance-hero{
+    background-image: url(/assets/pexels-mikhail-nilov-7734597.jpg);
+    background-size: cover;
+    background-position-x: 40%;
+    object-fit: cover;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(3em, 10vh, 4em) clamp(1.5em, 6vw, 9em);
+}
+
+.insurance-hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    height: fit-content;
+    background-color: var(--accent-1);
+    padding: 1em 2em;
+}
+
+.insurance-hero-text h3{
+    color: var(--accent-2);
+}
+
+.insurance-hero-text h4{
+    color: white;
+}
+
+
+.insurance-desc{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(3em, 10vh, 4em) clamp(1.5em, 6vw, 9em);
+    gap: 2em;
+    color: white;
+}
+
+.insurance-features{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.insurance{
+    display: inline-flex;
+    gap: 0.5em;
+}
+
+.check{
+    color: var(--accent-1);
+    background-color: var(--accent-2);
+    border-radius: 100px;
+}
+
+
+@media screen and (max-width: 768px){
+    .services-insurance{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width: 426px){
+    .maintenance-card-container{
+        grid-template-columns: auto;
+    }
+}

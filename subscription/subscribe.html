@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../master.css">
     <link rel="stylesheet" href="subscribe.css">
+    <script defer src="/subscription/subscribe.css"></script>
     <script defer src="/components/main-header.js"></script>
-    <script ></script>
     <title>Document</title>
 </head>
 <body>
@@ -50,37 +50,37 @@
                     </div>
                 </div>
                 <div class="subscribe-form">
-                    <form action="#">
+                    <form id="form" action="/">
+                        <h3>Registration</h3>
                         <div class="form-list">
                             <div class="input-box">
                                 <span class="form-title">Full Name*:</span>
-                                <input type="text" placeholder="Enter your Full Name" required>
+                                <input type="text" placeholder="Enter your Full Name" id="username">
+                                <div class="error"></div>
                             </div>
                             <div class="input-box">
                                 <span class="form-title">Email*:</span>
-                                <input type="text" placeholder="Enter your Email" required>
+                                <input type="text" placeholder="Enter your Email" id ="email">
                             </div>
                             <div class="input-box">
                                 <span class="form-title">Confirm Email*:</span>
-                                <input type="text" placeholder="Confirm your Email" required>
+                                <input type="text" placeholder="Confirm your Email" id="confirm-email">
                             </div>
                             <div class="input-box">
                                 <span class="form-title">Password*:</span>
-                                <input type="password" placeholder="Enter your Password" required>
+                                <input type="password" placeholder="Enter your Password" id="password">
                             </div>
                             <div class="input-box">
                                 <span class="form-title">Confirm Password*:</span>
-                                <input type="password" placeholder="Confirm your Password" required>
+                                <input type="password" placeholder="Confirm your Password" id="confirm-pass">
                             </div>
                             <div class="tos">
                                 <input type="checkbox" required>
                                 <span>I have read and agree to ShipDecKK's <a href=""><span class="text-highlight">terms of service</span></a> and <a href=""><span class="text-highlight">privacy policy</span></a>.</span>
                             </div>
                         </div>
+                        <button type="submit">Subscribe</button>
                     </form>
-                    <a href="" id="sub-button">
-                        <h5>Subscribe</h5>
-                    </a>
                 </div>
             </div>
         </div>
