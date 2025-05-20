@@ -96,14 +96,24 @@ body{
 .image-type-container{
     display: flex;
     flex-direction: column;
-    background-image: url(/assets/yacths.jpg);
     background-size: cover;
     background-position-y: 55%;
     box-sizing: border-box;
     height: 30dvh;
     padding: 1em 1em;
     justify-content: flex-end;
+}
 
+#luxury-yachts{
+    background-image: url(/assets/yacths.jpg);
+}
+
+#cargo-ships{
+    background-image: url(/assets/pexels-dibert-1117210.jpg);
+}
+
+#fishing-boats{
+    background-image: url(/assets/pexels-souvenirpixels-3989770.jpg);
 }
 
 .image-text{
@@ -113,22 +123,50 @@ body{
     width: 100%;
 }
 
+.image-text h5{
+    color: var(--accent-1);
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
 
 .product-card{
     display: flex;
     flex-direction: column;
-    background-color: var(--accent-1);
-    width: 400px;
-    height: 400px;
-    max-width: 400px;
-    max-height: 400px;
+    width: fit-content;
+    height: fit-content;
+    max-width: 450px;
+    max-height: 500px;
+    outline: 1px solid var(--accent-1-hover);
+    border-radius: 4px;
 }
 
+.product-card:hover{
+    outline: 1.5px solid var(--accent-2);
+}
+
+.product-card:active{
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.14);
+}
+
+.product-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 
 .product-text{
     display: flex;
     flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em 1em;
 }
 
 .product-condition{
@@ -139,4 +177,43 @@ body{
 .product-main{
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.description{
+    font-size: clamp(calc(0.4vw + 0.2rem), calc(0.4vw + 0.5rem), 1.4rem);
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.type{
+    color: var(--product-type);
+}
+
+.condition{
+    color: var(--product-condition);
+}
+
+.title{
+    color: var(--accent-1);
+    font-weight: 700;
+}
+
+.price{
+    color: var(--accent-2);
+}
+
+@media screen and (max-width: 768px){
+    .image-type-container{
+        display: none;
+    }
+}
+
+
+    
+
+@media screen and (max-width: 426px){
+    .product-type-container{
+        padding: clamp(1.5rem, 5vh, 7rem) 1em;
+    }
 }

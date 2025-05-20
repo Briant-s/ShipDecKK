@@ -12,7 +12,7 @@ class Header extends HTMLElement {
                 <a href="/index.html"><h1>ShipDecKK</h1></a>
             </div>
             <div class="menu-items">
-                <a href="" class="header-link">Gallery</a>
+                <a href="/gallery/gallery.html" class="header-link">Gallery</a>
                 <a href="/services/services.html" class="header-link">Services</a>
                 <a href="/about-us/about-us.html" class="header-link">About Us</a>
                 <a href="/subscription/subscribe.html" class="sub-button">Subscribe</a>
@@ -26,7 +26,7 @@ class Header extends HTMLElement {
                 <span class="material-symbols-outlined">close</span>
             </button>
             <div class="sidebar-actions">
-                <a href=""><p class="sidebar-text">Gallery</p></a>
+                <a href="/gallery/gallery.html"><p class="sidebar-text">Gallery</p></a>
                 <a href=""><p class="sidebar-text">Services</p></a>
                 <a href="/about-us/about-us.html"><p class="sidebar-text">About Us</p></a>
                 <a href="/subscription/subscribe.html" class="sub-button">Subscribe</a>

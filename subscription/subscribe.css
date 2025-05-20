@@ -22,7 +22,7 @@ h4{
     padding: clamp(2em, 3vh, 5rem) clamp(1.5rem, 2vw, 5rem);
     justify-content: center;
     box-sizing: border-box;
-
+    height: 100%;
 }
 
 
@@ -251,5 +251,9 @@ h4{
     .subscribe-form form#form{
 
         align-items: center;
+    }
+
+    .main-subscribe{
+        padding: 1em 1em;
     }
 }    
