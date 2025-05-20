@@ -1,0 +1,142 @@
+body{
+    color: black;
+}
+
+
+.gallery-hero{
+    display: flex;
+    background-image: url(/assets/pexels-lukhe-29106007.jpg);
+    background-size: cover;
+    padding: 5em 5em;
+    box-sizing: border-box;
+    max-height: fit-content;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hero-text h2{
+    color: var(--accent-1);
+}
+
+.hero-text h5{
+    color: white;
+}
+
+
+.navigation-setting{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: clamp(1.5rem, 5vh, 7rem) clamp(3rem, 10vw, 7rem);
+}
+.navigation-setting span{
+    font-size: clamp(calc(0.4vw + 0.6rem), calc(1vw + 1rem), 1.4rem);
+}
+
+.search-product{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    
+}
+
+.search-product input{
+    height: 2vh;
+    padding: 0.6em 0.7em;
+    border: none;
+    outline: 2px solid var(--accent-1-hover);
+    border-radius: 4px;
+}
+
+.filter-product{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.dropdown-container{
+    display: inline-flex;
+    gap: 2em;
+}
+
+
+.dropdown{
+    padding: 0.7em 1.2em;
+    border: none;
+    outline: 1.5px solid var(--accent-1-hover);
+    border-radius: 2px;
+}
+
+.product-type-container{
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1.5rem, 5vh, 7rem) clamp(3rem, 10vw, 7rem);
+    gap: 1em;
+}
+
+.view-button{
+    text-decoration: none;
+    color: white;
+    background-color: var(--accent-2);
+    padding: 0.5em 1em;
+}
+
+.product-type-title{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-type-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/yacths.jpg);
+    background-size: cover;
+    background-position-y: 55%;
+    box-sizing: border-box;
+    height: 30dvh;
+    padding: 1em 1em;
+    justify-content: flex-end;
+
+}
+
+.image-text{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-1);
+    width: 400px;
+    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+
+.product-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-condition{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.product-main{
+    display: inline-flex;
+    justify-content: space-between;
+}
