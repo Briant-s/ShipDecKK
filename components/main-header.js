@@ -13,7 +13,7 @@ class Header extends HTMLElement {
             </div>
             <div class="menu-items">
                 <a href="" class="header-link">Gallery</a>
-                <a href="" class="header-link">Services</a>
+                <a href="/services/services.html" class="header-link">Services</a>
                 <a href="/about-us/about-us.html" class="header-link">About Us</a>
                 <a href="/subscription/subscribe.html" class="sub-button">Subscribe</a>
             </div>

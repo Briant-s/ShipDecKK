@@ -1,3 +1,7 @@
+// getting the form
+
+const form = document.getElementById("form");
+
 // getting values from the user
 const fullname_input = document.getElementById("username");
 const email_input = document.getElementById("email");
@@ -9,61 +13,98 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // error message values
 const error_name = document.getElementById("fullname-error");
+const error_email = document.getElementById("email-error");
+const error_phone = document.getElementById("phone-error");
+const error_password = document.getElementById("password-error");
+const error_con_password = document.getElementById("con_password-error");
 
 
 form.addEventListener("submit", (e) => {
-    let errors = [];
-
-    errors = getFormErrors(fullname_input.value, email_input.value, phone_input.value, password_input.value, con_password_input.value)
-
-    if (errors.length > 0){
-        e.preventDefault();
-    }
-})
-
-function getFormErrors(fullname, email, phone, password, con_password){
-    // error messages
-    let errors = []
+    // variables
+    const fullname = document.getElementById("username").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const con_password = document.getElementById("confirm-pass").value.trim()
     
-    
+    let errors = 0;
+
     // handle name
     if (fullname === "" || fullname === null){
+        errors++;
         error_name.innerText = "Fullname is Required";
-        fullname_input.previousElementSibling.classList.add("invalid")
-        fullname_input.classList.add("form-invalid")
+        error_name.parentElement.style.display = "inline-flex";
+        fullname_input.previousElementSibling.classList.add("invalid");
+        fullname_input.classList.add("form-invalid");
     }
     
     // handle email
     if (email === "" || email === null){
-        errors.push("Email is Required");
-        email_input.previousElementSibling.classList.add("invalid")
-        email_input.classList.add("form-invalid")
+        errors++;
+        error_email.innerText = "Email is Required";
+        error_email.parentElement.style.display = "inline-flex";
+        email_input.previousElementSibling.classList.add("invalid");
+        email_input.classList.add("form-invalid");
     }
     
     // handle phone number
     if (phone === "" || phone === null){
-        errors.push("Phone Number is Required");
-        phone_input.previousElementSibling.classList.add("invalid")
-        phone_input.classList.add("form-invalid")
+        errors++;
+        error_phone.innerText = "Phone Number is Required";
+        error_phone.parentElement.style.display = "inline-flex";
+        phone_input.previousElementSibling.classList.add("invalid");
+        phone_input.classList.add("form-invalid");
     }
     
     // handle password
     if (password === "" || password === null){
-        errors.push("Password is Required");
-        password_input.previousElementSibling.classList.add("invalid")
-        password_input.classList.add("form-invalid")
+        errors++;
+        error_password.innerText = "Password is Required";
+        error_password.parentElement.style.display = "inline-flex";
+        password_input.previousElementSibling.classList.add("invalid");
+        password_input.classList.add("form-invalid");
+    }
+    else if (password.length < 8){
+        errors++;
+        error_password.innerText = "Password must be more than 8 characthers";
+        error_password.parentElement.style.display = "inline-flex";
+        password_input.previousElementSibling.classList.add("invalid");
+        password_input.classList.add("form-invalid");
     }
     
     // handle password
     if (con_password === "" || con_password === null){
-        errors.push("Confirmation Password is Required");
-        con_password_input.previousElementSibling.classList.add("invalid")
-        con_password_input.classList.add("form-invalid")
+        errors++;
+        error_con_password.innerText = "Confirmation Password is Required";
+        error_con_password.parentElement.style.display = "inline-flex";
+        con_password_input.previousElementSibling.classList.add("invalid");
+        con_password_input.classList.add("form-invalid");
+    }
+    else if (con_password !== password){
+        errors++;
+        error_con_password.innerText = "Confirmation Password Must be The Same";
+        error_con_password.parentElement.style.display = "inline-flex";
+        con_password_input.previousElementSibling.classList.add("invalid");
+        con_password_input.classList.add("form-invalid");
     }
 
+    if (errors > 0){
+        e.preventDefault();
+    }
 
-    return errors;
+})
 
-};
+
+const userinputs = [fullname_input, phone_input, email_input, password_input, con_password_input]
+
+userinputs.forEach(input => {
+    input.addEventListener("input", () => {
+        if(input.previousElementSibling.classList.contains("invalid")){
+            input.previousElementSibling.classList.remove("invalid");
+            input.classList.remove("form-invalid");
+            input.nextElementSibling.style.display = "none";
+        }
+    });
+});
 
 
