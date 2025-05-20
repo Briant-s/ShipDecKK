@@ -61,11 +61,11 @@ html, body{
 }
 
 .sub-button:hover{
-    background-color: var(--button-accent-2);
+    background-color: var(--hover-accent-2);
 }
 
 .sub-button:active{
-    background-color: var(--button-accent-2);
+    background-color: var(--active-accent-2);
 }
 
 #header-button{

@@ -6,9 +6,11 @@
     --accent-1: #091235;
     --accent-1-hover: rgba(9, 18, 53, 0.5);
     --accent-2: #FCA311;
-    --button-accent-2: #FEC872;
+    --hover-accent-2: #FDB849;
+    --active-accent-2: #DE8A02;
     --text-accent-2: #D8BD8A;
     --invalid: rgba(240, 45, 58, 1);
+    --valid: #2DF034;
 }
 
 html, body{
@@ -47,7 +49,7 @@ h3{
 
 h4{
     margin: 0%;
-    font-size: clamp(calc(1vw + 1rem), calc(2vw + 0.2rem), 2.6rem);
+    font-size: clamp(calc(1vw + 0.5rem), calc(2vw + 0.2rem), 2.6rem);
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
@@ -64,7 +66,7 @@ h5{
 
 h6{
     margin: 0%;
-    font-size: clamp(calc(0.4vw + 0.8rem), calc(0.65vw + 0.5rem), 1.4rem);
+    font-size: clamp(calc(0.4vw + 0.6rem), calc(0.65vw + 0.5rem), 1.4rem);
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
