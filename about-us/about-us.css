@@ -2,6 +2,14 @@ body{
     color: var(--accent-1);
 }
 
+h4{
+    font-size: clamp(calc(1vw + 1rem), calc(1.5vw + 0.2rem), 2.6rem);
+}
+
+h6{
+    color: var(--text-light);
+}
+
 .aboutus-hero{
     position: relative;
 }
@@ -99,7 +107,7 @@ body{
 
 #view-ships-cta:hover{
     background-color: var(--accent-1);
-    color: var(--button-accent-2);
+    color: var(--accent-2);
 }
 
 
@@ -259,7 +267,10 @@ body{
     max-height: 300px;
     padding: 1em 1em;
     justify-content: space-between;
+}
 
+.achievements:hover{
+    box-shadow: 0px 0px 2px 5px #ddd;
 }
 
 .achievements span{
