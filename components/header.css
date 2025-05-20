@@ -1,24 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 
-
-:root{
-    --accent-1: #091235;
-    --accent-2: #FCA311;
-    --button-accent-2: #FEC872;
-    --text-accent-2: #D8BD8A;
+span{
+    font-size: clamp(1.2rem, calc(1vw + 0.3rem), 1.6rem);
 }
 
-html, body{
-    width: 100vw;
-    height: 100dvh;
-    margin: 0%;
-    padding: 0%;
-    color: white;
-}
 
-.hover:hover{
-    opacity: 50%;
-}
 
 .main-header{
     display: inline-flex;
@@ -32,6 +18,11 @@ html, body{
 
 .main-header #header-button{
     display: none;
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--logo);
 }
 
 #header-menu{
@@ -70,7 +61,8 @@ html, body{
 
 #header-button{
     border: none;
-    background-color: var(--accent-2);
+    background: none;
+    color: var(--accent-2);
     align-items: center;
     padding: clamp(0.3em, 0.9vw, 1em) clamp(0.5em, 1vw, 1.2em);
 }
@@ -90,9 +82,9 @@ html, body{
     right: 0;
     background-color: var(--accent-1);
     padding: 1em 1em;
-    width: clamp(6em, 7vw, 8em);
+    width: clamp(6em, 10vw, 8em);
     height: 100%;
-    gap: 32px;
+    gap: 2em;
     z-index: 10;
 }
 
@@ -102,12 +94,24 @@ html, body{
     gap: 2em;
 }
 
+
 .sidebar-actions p{
     color: var(--accent-2);
 }
 
 .sidebar-actions:active{
     color: var(--text-accent-2);
+}
+
+.sidebar-item{
+    display: inline-flex;
+    gap: 0.2em;
+    align-items: center;
+    color: var(--accent-2);
+}
+
+.sidebar-item:active{
+    background-color: var(--active-accent-1);
 }
 
 .header-sidebar a{
@@ -119,10 +123,6 @@ html, body{
     margin: 0%;
 }
 
-.sidebar-text{
-    font-size: clamp(1.5em, 3vw, 4em);
-    color: white;
-}
 
 #close-button{
     display: inline-flex;

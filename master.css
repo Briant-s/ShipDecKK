@@ -5,6 +5,7 @@
 :root{
     --accent-1: #091235;
     --accent-1-hover: rgba(9, 18, 53, 0.5);
+    --active-accent-1: rgba(66, 72, 98, 0.5);
     --accent-2: #FCA311;
     --product-type: #6173BA;
     --product-condition: #9747FF;
@@ -14,6 +15,7 @@
     --invalid: rgba(240, 45, 58, 1);
     --valid: #2DF034;
     --text-light: rgb(68, 68, 68);
+    --logo: #faf0ca;
 }
 
 html, body{

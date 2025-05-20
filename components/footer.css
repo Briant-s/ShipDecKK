@@ -85,6 +85,9 @@ hr.solid{
     justify-content: space-between;
 }
 
+#logo{
+    color: var(--logo);
+}
 
 #copyright{
     color: var(--product-type);

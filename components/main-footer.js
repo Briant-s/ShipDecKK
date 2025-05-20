@@ -36,7 +36,7 @@ class Footer extends HTMLElement {
                 </div>
                 <hr class="solid">
                 <div class="info-row">
-                    <h3>ShipDecKK</h3>
+                    <h3 id="logo">ShipDecKK</h3>
                     <h6 id="copyright">© 2020-2025 ShipDecKK. All rights reserved.</h6>
                 </div>
             </div>

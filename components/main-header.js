@@ -26,9 +26,18 @@ class Header extends HTMLElement {
                 <span class="material-symbols-outlined">close</span>
             </button>
             <div class="sidebar-actions">
-                <a href="/gallery/gallery.html"><p class="sidebar-text">Gallery</p></a>
-                <a href="/services/services.html"><p class="sidebar-text">Services</p></a>
-                <a href="/about-us/about-us.html"><p class="sidebar-text">About Us</p></a>
+                <div class="sidebar-item">
+                    <span class="material-symbols-outlined">store</span>
+                    <a href="/gallery/gallery.html"><p class="sidebar-text">Gallery</p></a>
+                </div>
+                <div class="sidebar-item">
+                    <span class="material-symbols-outlined">monitoring</span>
+                    <a href="/services/services.html"><p class="sidebar-text">Services</p></a>
+                </div>
+                <div class="sidebar-item">
+                    <span class="material-symbols-outlined">info</span>
+                    <a href="/about-us/about-us.html"><p class="sidebar-text">About Us</p></a>
+                </div>
                 <a href="/subscription/subscribe.html" class="sub-button">Subscribe</a>
             </div>
         </div>
