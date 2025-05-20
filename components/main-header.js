@@ -27,7 +27,7 @@ class Header extends HTMLElement {
             </button>
             <div class="sidebar-actions">
                 <a href="/gallery/gallery.html"><p class="sidebar-text">Gallery</p></a>
-                <a href=""><p class="sidebar-text">Services</p></a>
+                <a href="/services/services.html"><p class="sidebar-text">Services</p></a>
                 <a href="/about-us/about-us.html"><p class="sidebar-text">About Us</p></a>
                 <a href="/subscription/subscribe.html" class="sub-button">Subscribe</a>
             </div>

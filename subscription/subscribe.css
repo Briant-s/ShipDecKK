@@ -32,7 +32,7 @@ h4{
     color: var(--accent-1);
     align-items: center;    
     background-color: white;
-    padding: clamp(2em, 10vh, 5rem) clamp(1.5rem, 10vw, 5rem);
+    padding: clamp(2em, 8vh, 5rem) clamp(1.5rem, 10vw, 5rem);
     height: fit-content;
 }
 
@@ -254,6 +254,6 @@ h4{
     }
 
     .main-subscribe{
-        padding: 1em 1em;
+        padding: 2em 1em;
     }
 }    

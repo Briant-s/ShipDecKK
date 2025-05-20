@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="landing.css">
-    <script defer src="components/main-header.js"></script>
+    <script defer src="/components/main-header.js"></script>
+    <script defer src="/components/main-footer.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <main-header></main-header>
     <div class="hero-image">
-        <main-header></main-header>
-        <img src="/assets/ship-landing.jpg" id="landing-image">
         <div class="hero-text">
             <h1>Luxury Yacht</h1>
             <div class="hero-cta">
@@ -19,10 +19,10 @@
                     Explore our refined selection of yachts and commercial vessels, chosen for the quality and peformance. From leisure to logistics, discover exceptional ships in one trusted destination.
                 </h5>
                 <div class="cta-container">
-                    <a href="" class="cta" id="view-product">
+                    <a href="/gallery/gallery.html" class="cta" id="view-product">
                         <h5>View Product</h5>
                     </a>
-                    <a href="" class="cta" id="subscribe">
+                    <a href="/subscription/subscribe.html" class="cta" id="subscribe">
                         <h5>Subscribe</h5>
                     </a>
                     </button>
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </div>
-        <a href="" id="view-product-cta">
+        <a href="/gallery/gallery.html" id="view-product-cta">
             <h5>View Products</h5>
         </a>
     </div>
@@ -109,7 +109,7 @@
             <h2>Get The Latest From <span class="text-highlight">ShipDecKK</span></h2>
             <div class="descbutton">
                 <h5>Get exclusive offers, industry news, and new ship listings delivered straight to your inbox.</h5>
-                <a href="" id="subscription-cta">
+                <a href="/subscription/subscribe.html" id="subscription-cta">
                     Subscribe
                 </a>
             </div>
@@ -126,6 +126,7 @@
                 <div class="cs-text">
                     <h5>Ship Sales</h5>
                     <h6>A wide range of vessels—from elegant yachts to powerful cargo ships—ready for your next journey.</h6>
+                    <a href="/services/services.html" class="learn">Learn More</a>
                 </div>
             </div>
             <div class="service-card">
@@ -133,6 +134,7 @@
                 <div class="cs-text">
                     <h5>Maintenance</h5>
                     <h6>Expert maintenance services to keep your vessel safe, efficient, and seaworthy.</h6>
+                    <a href="/services/services.html" class="learn">Learn More</a>
                 </div>
             </div>
             <div class="service-card">
@@ -140,9 +142,29 @@
                 <div class="cs-text">
                     <h5>Insurance</h5>
                     <h6>Tailored coverage plans to protect your vessel, whether for leisure or commercial use.</h6>
+                    <a href="/services/services.html" class="learn">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="achievements-part">
+        <h2>Our Achievements</h2>
+        <div class="achievements-container">
+            <div class="achievements">
+                <span class="material-symbols-outlined">directions_boat</span>
+                <h5>Top 100 Ship Dealers (2024)</h5>
+            </div>
+            <div class="achievements">
+                <span class="material-symbols-outlined">social_leaderboard</span>
+                <h5>#1 Asia-Pacific Maritime Innovation Award</h5>
+            </div>
+            <div class="achievements">
+                <span class="material-symbols-outlined">groups</span>
+                <h5>12 Strategic Partnerships</h5>
+            </div>
+        </div>
+        <a href="/about-us/about-us.html" class="cta">Learn More</a>
+    </div>
+    <main-footer></main-footer>
 </body>
 </html>
