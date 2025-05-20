@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../master.css">
     <link rel="stylesheet" href="subscribe.css">
-    <script defer src="/subscription/subscribe.css"></script>
+    <script defer src="/subscription/subscribe.js"></script>
     <script defer src="/components/main-header.js"></script>
     <title>Document</title>
 </head>
 <body>
     <main-header></main-header>
     <div class="container-content">
-        <img src="/assets/pexels-13nuance-561463.jpg" alt="">
         <div class="main-subscribe">
             <div class="subscribe-part">
                 <div class="subscribe-text">
-                    <h4>Stay Connected with ShipDecKK for <span class="text-highlight">Free!</span></h4>
+                    <h3>Stay Connected with ShipDecKK for <span class="text-highlight">Free!</span></h3>
                     <div class="benefits-part">
                         <div class="sub-desc">
                             <h6>Sign up to receive personalized updates and valuable insights designed to keep you ahead in the world of maritime and ship ownership:</h6>
@@ -54,28 +53,37 @@
                         <h3>Registration</h3>
                         <div class="form-list">
                             <div class="input-box">
-                                <span class="form-title">Full Name*:</span>
-                                <input type="text" placeholder="Enter your Full Name" id="username">
-                                <div class="error"></div>
+                                <span class="form-title">Full Name</span>
+                                <input type="text" id="username" class="">
+                                <div class="error-text">
+                                    <span class="material-symbols-outlined">warning</span>
+                                    <h6 id="fullname-error"></h6>
+                                </div>
                             </div>
                             <div class="input-box">
-                                <span class="form-title">Email*:</span>
-                                <input type="text" placeholder="Enter your Email" id ="email">
+                                <div class="form-label">
+                                    <span class="form-title">Phone Number</span>
+                                    <span class="form-placeholder">e.g. +1 234 567 8901</span>
+                                </div>
+                                <input type="text" id="phone">
                             </div>
                             <div class="input-box">
-                                <span class="form-title">Confirm Email*:</span>
-                                <input type="text" placeholder="Confirm your Email" id="confirm-email">
+                                <div class="form-label">
+                                    <span class="form-title">Email</span>
+                                    <span class="form-placeholder">e.g. name@example.com</span>
+                                </div>
+                                <input type="text" id ="email">
                             </div>
                             <div class="input-box">
-                                <span class="form-title">Password*:</span>
-                                <input type="password" placeholder="Enter your Password" id="password">
+                                <span class="form-title">Password</span>
+                                <input type="password" id="password">
                             </div>
                             <div class="input-box">
-                                <span class="form-title">Confirm Password*:</span>
-                                <input type="password" placeholder="Confirm your Password" id="confirm-pass">
+                                <span class="form-title">Confirm Password</span>
+                                <input type="password" id="confirm-pass">
                             </div>
                             <div class="tos">
-                                <input type="checkbox" required>
+                                <input type="checkbox">
                                 <span>I have read and agree to ShipDecKK's <a href=""><span class="text-highlight">terms of service</span></a> and <a href=""><span class="text-highlight">privacy policy</span></a>.</span>
                             </div>
                         </div>
