@@ -112,8 +112,11 @@ h6{
 }
 
 #view-ships-cta:hover{
-    background-color: var(--accent-1);
-    color: var(--accent-2);
+    background-color: var(--hover-accent-2);
+}
+
+#view-ships-cta:active{
+    background-color: var(--active-accent-2);
 }
 
 
