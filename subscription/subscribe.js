@@ -5,11 +5,11 @@ const form = document.getElementById("form");
 // getting values from the user
 const fullname_input = document.getElementById("username");
 const email_input = document.getElementById("email");
+const email = document.getElementById("email").value.trim();
 const phone_input = document.getElementById("phone");
 const password_input = document.getElementById("password");
 const con_password_input = document.getElementById("confirm-pass");
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const phoneRegex = /^\+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+
 
 
 // error message values
@@ -18,6 +18,38 @@ const error_email = document.getElementById("email-error");
 const error_phone = document.getElementById("phone-error");
 const error_password = document.getElementById("password-error");
 const error_con_password = document.getElementById("con_password-error");
+
+
+
+function isEmailValid(email){
+    let symbolcount = 0;
+    let symbolindex = -1;
+
+    // find number of @ symbols
+    for (let i = 0; i < email.length; i++)
+    {
+        if (email[i] === '@')
+        {
+            symbolcount++;
+            symbolindex = i;
+        }
+    }
+
+    if (symbolcount !== 1)
+    {
+        return false;
+    }
+
+    for (let i = symbolindex + 1; i < email.length; i++)
+    {
+        if (email[i] === '.')
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
 
 
 form.addEventListener("submit", (e) => {
@@ -47,18 +79,14 @@ form.addEventListener("submit", (e) => {
         email_input.previousElementSibling.classList.add("invalid");
         email_input.classList.add("form-invalid");
     }
-    else if (!emailRegex.test(email)){
+    else if (isEmailValid(email) === false){
         errors++;
         error_email.innerText = "Email Format Must be Correct";
         error_email.parentElement.style.display = "inline-flex";
         email_input.previousElementSibling.classList.add("invalid");
         email_input.classList.add("form-invalid");
     }
-    else if (emailRegex.test(email)){
-        error_email.parentElement.style.display = "none";
-        email_input.classList.add("form-valid");
-    }
-    
+
     // handle phone number
     if (phone === "" || phone === null){
         errors++;
@@ -67,17 +95,7 @@ form.addEventListener("submit", (e) => {
         phone_input.previousElementSibling.classList.add("invalid");
         phone_input.classList.add("form-invalid");
     }
-    else if (!phoneRegex.test(phone)){
-        errors++;
-        error_phone.innerText = "Phone Number Format Must be Correct";
-        error_phone.parentElement.style.display = "inline-flex";
-        phone_input.previousElementSibling.classList.add("invalid");
-        phone_input.classList.add("form-invalid");
-    }
-    else if (phoneRegex.test(phone)){
-        error_phone.parentElement.style.display = "none";
-        phone_input.classList.add("form-valid");
-    }
+
     
     // handle password
     if (password === "" || password === null){
