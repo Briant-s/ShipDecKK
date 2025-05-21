@@ -64,9 +64,17 @@
                             <div class="input-box">
                                 <div class="form-label">
                                     <span class="form-title">Phone Number</span>
-                                    <span class="form-placeholder">e.g. +1-234-567-8901</span>
+                                    <span class="form-placeholder">e.g. +1 234-567-8901</span>
                                 </div>
-                                <input type="tel" id="phone">
+                                <div class="phone-form">
+                                    <select name="" id="">
+                                        <option value="">+1</option>
+                                        <option value="">+32</option>
+                                        <option value="">+44</option>
+                                        <option value="">+62</option>
+                                    </select>
+                                    <input type="tel" id="phone">
+                                </div>
                                 <div class="error-text">
                                     <span class="material-symbols-outlined">warning</span>
                                     <h6 id="phone-error"></h6>
@@ -97,6 +105,19 @@
                                 <div class="error-text">
                                     <span class="material-symbols-outlined">warning</span>
                                     <h6 id="con_password-error"></h6>
+                                </div>
+                            </div>
+                            <div class="gender-select">
+                                <span class="form-title">Select Gender</span>
+                                <div class="gender-container">
+                                    <div class="radio-container">
+                                        <input type="radio" id="male" name="gender" required>
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div class="radio-container">
+                                        <input type="radio" id="female" name="gender" required>
+                                        <label for="female">Female</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tos">

@@ -22,7 +22,6 @@ h4{
     padding: clamp(2em, 3vh, 5rem) clamp(1.5rem, 2vw, 5rem);
     justify-content: center;
     box-sizing: border-box;
-    height: 100%;
 }
 
 
@@ -199,6 +198,46 @@ h4{
 
 .tos span{
     font-size: clamp(0.5rem, calc(0.65vw + 0.65rem), 1.4rem);
+}
+
+.phone-form{
+    display: inline-flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.phone-form select{
+    padding: 0.5em 0.5em;
+    outline: 2px solid var(--accent-1-hover);
+    border: none;
+    border-radius: 2px;
+}
+
+.gender-container{
+    display: inline-flex;
+    gap: 1em;
+}
+
+.radio-container{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.radio-container input{
+    border: none;
+    outline: none;
+}
+
+.gender-select{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+#phone{
+    width: 100%;
 }
 
 #checkbox{
